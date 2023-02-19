@@ -1,6 +1,6 @@
 # Amcat-ques
 Easy:
-Find GCD and LCM of two numbers.
+* Find GCD and LCM of two numbers.
 Program to check whether the given number is prime or not.
 To check whether the number is Armstrong.
 Program to check number is strong or not.
