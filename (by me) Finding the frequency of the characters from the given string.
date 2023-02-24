@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+import java.util.HashMap;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		//Finding the frequency of the characters from the given string.
+		Scanner sc=new Scanner(System.in);
+		String s;
+		char key;
+		int val=0,newval=1;
+		s=sc.nextLine();
+		HashMap<Character,Integer> map=new HashMap<>();
+		for(int i=0;i<s.length();i++)
+		{
+		    if(map.containsKey(s.charAt(i)))
+		    {
+		        val=map.get(s.charAt(i));
+		        val=val+1;
+		        key=s.charAt(i);
+		        map.replace(key,val);
+		    }
+		    else{
+		        key=s.charAt(i);
+		        map.put(key,newval);
+		    }
+		}
+		System.out.println(map);
+		
+	}
+}
